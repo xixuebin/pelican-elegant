@@ -1,12 +1,21 @@
 Thanks to
 =========
 
+[Jed Brown](https://github.com/jedbrown)
+----------------------------------------
+
+### Oct 12, 2013
+
+1. He suggested integration with Latex.
+
 [calfzhou](https://github.com/calfzhou)
 ---------------------------------------
 
 ### Nov 8, 2013
 
 1. He [reported](https://github.com/talha131/pelican-elegant/issues/58) that line numbers in code block to do not always get displayed correctly.
+1. He [reported](https://github.com/talha131/pelican-elegant/issues/58) that line numbers do not align vertically with code blocks.
+1. He [suggested](https://github.com/talha131/pelican-elegant/issues/58) fixed width for line number column.
 
 
 [brechtm](https://github.com/brechtm)
@@ -27,6 +36,7 @@ Thanks to
 ### Oct 4, 2013
 
 1. He [reported](https://github.com/talha131/pelican-elegant/issues/10) an issue with CSS style of links in an unordered lists.
+1. He [reported](https://github.com/talha131/pelican-elegant/issues/34) that articles list in tags page is not sorted at all. He helped a lot to reproduce the issue and stayed persistent to get it fixed.
 
 ### Oct 1, 2013
 
