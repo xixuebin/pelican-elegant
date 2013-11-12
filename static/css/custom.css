@@ -16,3 +16,6 @@ div#contents p.topic-title.first {
 #footer {
     font-size: 0.8em;
 }
+div.math {
+    overflow: auto;
+}
