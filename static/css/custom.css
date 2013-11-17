@@ -19,3 +19,6 @@ div#contents p.topic-title.first {
 div.math {
     overflow: auto;
 }
+div.figure img {
+    width: inherit;
+}
