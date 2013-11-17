@@ -7,7 +7,7 @@
 {% block content %}
 <div class="row-fluid">
     {% if LANDING_PAGE_ABOUT and LANDING_PAGE_ABOUT.title %}
-    <header class="page_header span12">
+    <header class="page-header span12">
     <h1><a href="{{ SITEURL }}">{{ LANDING_PAGE_ABOUT.title }}</a></h1>
     </header>
     {% endif %}
@@ -31,7 +31,7 @@
             {% for project in PROJECTS %}
             <ul class="list-all-articles">
                 <li>
-                <a href="{{ project.url }}" title="{{ project.name }}">{{ project.name }}</a> <span class="proj_desc">{{ project.description }}</span>
+                <a href="{{ project.url }}" title="{{ project.name }}">{{ project.name }}</a> <span class="proj-desc">{{ project.description }}</span>
                 </li>
             </ul>
             {%endfor %}
