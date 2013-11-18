@@ -22,3 +22,10 @@ div.math {
 div.figure img {
     width: inherit;
 }
+div.figure p.caption {
+    margin: 5px 1.5em 5px 1.5em;
+}
+.article-content img {
+    border: 0px;
+    padding: 0px;
+}
