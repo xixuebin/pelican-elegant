@@ -29,3 +29,6 @@ div.figure p.caption {
     border: 0px;
     padding: 0px;
 }
+object[type="image/svg+xml"] {
+    max-width: 100%;
+}
