@@ -1,6 +1,13 @@
 Thanks to
 =========
 
+[kafran](https://github.com/kafran)
+-----------------------------------
+
+### Nov 18, 2013
+
+1. He [reported](https://github.com/talha131/pelican-elegant/issues/76) a missing `</header>` tag
+
 [Jed Brown](https://github.com/jedbrown)
 ----------------------------------------
 
@@ -26,6 +33,7 @@ Thanks to
 ### Nov 11, 2013
 
 1. He submitted a [pull request](https://github.com/talha131/pelican-elegant/pull/62) to fix a typo in CSS.
+1. He reported an [issue](https://github.com/talha131/pelican-elegant/issues/64) in alignment of All Posts
 
 ### Nov 8, 2013
 
@@ -43,6 +51,10 @@ Thanks to
 
 [tshepang](https://github.com/tshepang)
 ---------------------------------------
+
+### Nov 18, 2013
+
+1. He [reported](https://github.com/talha131/pelican-elegant/issues/75) an issue with page headers
 
 ### Nov 10, 2013
 
