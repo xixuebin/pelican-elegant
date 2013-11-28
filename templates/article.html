@@ -111,5 +111,8 @@
     {{ super() }}
     {% include 'disqus_script_count.html' %}
     {% include 'disqus_comments_uncollapse.html' %}
-    {% include 'mathjax.html' %}
+    {% set depends = article.depends.split(', ') if article.depends else [] %}
+    {% if 'mathjax' in depends %}
+        {% include 'mathjax.html' %}
+    {% endif %}
 {% endblock script %}
