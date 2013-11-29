@@ -33,12 +33,13 @@
         </nav>
     </div>
     <div class="span8 article-content">
-        {% else %}
+       {% else %}
         <div class="span8 offset2 article-content">
             {% endif %}
 
             {{ article.content }}
-            {% include 'comments.html' %}
+            {% from 'comments.html' import comments with context %}
+            {{ comments(article) }}
             <aside>
             <hr/>
             {% for an_article in dates %}
@@ -109,8 +110,8 @@
 
 {% block script %}
     {{ super() }}
-    {% include 'disqus_script_count.html' %}
-    {% include 'disqus_comments_uncollapse.html' %}
+    {% from 'comments.html' import comments_script with context %}
+    {{ comments_script(article) }}
     {% set depends = article.depends.split(', ') if article.depends else [] %}
     {% if 'mathjax' in depends %}
         {% include 'mathjax.html' %}

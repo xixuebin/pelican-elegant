@@ -38,6 +38,8 @@
             {% endif %}
 
             {{ page.content }}
+            {% from 'comments.html' import comments with context %}
+            {{ comments(page) }}
         </div>
         <section>
         <div class="span2" style="float:right;font-size:0.9em;">
@@ -51,6 +53,8 @@
 
     {% block script %}
     {{ super() }}
+    {% from 'comments.html' import comments_script with context %}
+    {{ comments_script(page) }}
     {% set depends = page.depends.split(', ') if page.depends else [] %}
     {% if 'mathjax' in depends %}
         {% include 'mathjax.html' %}
