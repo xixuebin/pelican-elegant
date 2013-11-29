@@ -59,4 +59,7 @@
     {% if 'mathjax' in depends %}
         {% include 'mathjax.html' %}
     {% endif %}
+    {% if 'highcharts' in depends %}
+        <script src="http://code.highcharts.com/highcharts.js"></script>
+    {% endif %}
     {% endblock script %}

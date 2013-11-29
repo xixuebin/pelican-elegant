@@ -32,3 +32,8 @@ div.figure p.caption {
 object[type="image/svg+xml"] {
     max-width: 100%;
 }
+div.highcharts {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
