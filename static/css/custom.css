@@ -3,6 +3,12 @@ body {
     font-family: 'Microsoft YaHei', Tahoma, 'PT Serif', Georgia, Times, 'Times New Roman', Serif;
     text-shadow: 1px 1px 3px rgba(50, 50, 50, 0.15);
 }
+#push {
+    height: 53px;
+}
+#content-sans-footer {
+    margin-bottom: -53px;
+}
 .article-content {
     font-family: 'Microsoft YaHei', 'PT Serif', Georgia, 'Times New Roman', Times, Serif;
     text-align: left;
