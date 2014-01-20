@@ -37,10 +37,13 @@
         <div class="span8 offset2 article-content">
             {% endif %}
 
+            {% import '_includes/translations.html' as translations with context %}
+            {{ translations.translations_for(article) }}
             {{ article.content }}
-            {% from 'comments.html' import comments with context %}
+            {% from '_includes/comments.html' import comments with context %}
             {{ comments(article) }}
             <hr/>
+            {% include '_includes/related_posts.html' with context %}
             {% if article.prev_article or article.next_article %}
             <aside>
             <nav>
@@ -52,7 +55,7 @@
                         {% set pv_title = ptitle + ' ' +  '<small>' + article.prev_article.subtitle + '</small>' %}
                         {% set ptitle = ptitle + ' - ' + article.prev_article.subtitle %}
                     {% endif %}
-                <li class="previous-article"><a href="{{ SITEURL }}/{{ article.prev_article.url }}" title="Previous: {{ ptitle }}">&larr; {{ pv_title }}</a></li>
+                <li class="previous-article">« <a href="{{ SITEURL }}/{{ article.prev_article.url }}" title="Previous: {{ ptitle }}">{{ pv_title }}</a></li>
                 {% endif %}
                 {% if article.next_article %}
                     {% set ntitle = article.next_article.title|striptags %}
@@ -61,7 +64,7 @@
                         {% set nv_title = ntitle + ' ' +  '<small>' + article.next_article.subtitle + '</small>' %}
                         {% set ntitle = ntitle + ' - ' + article.next_article.subtitle %}
                     {% endif %}
-                <li class="next-article"><a href="{{ SITEURL }}/{{ article.next_article.url }}" title="Next: {{ ntitle }}">{{ nv_title }} &rarr;</a></li>
+                <li class="next-article"><a href="{{ SITEURL }}/{{ article.next_article.url }}" title="Next: {{ ntitle }}">{{ nv_title }}</a> »</li>
                 {% endif %}
             </ul>
             </nav>
@@ -75,7 +78,7 @@
             {% set day = article.date.strftime('%d')|int %}
             <time pubdate="pubdate" datetime="{{ article.date.isoformat() }}">{{ article.date.strftime('%b') }} {{ day }} {{- article.date.strftime(', %Y') }}</time>
             {% endif %}
-            {% include 'last_updated.html' %}
+            {% include '_includes/last_updated.html' %}
             {% if article.category|trim|count > 0 %}
             <h4>Category</h4>
             <a class="category-link" href="{{ SITEURL }}/categories.html#{{ category.slug }}-ref">{{ article.category }}</a>
@@ -91,8 +94,8 @@
                 {% endfor %}
             </ul>
             {% endif %}
-            {% include 'social_links.html' %}
-            {% include 'mailchimp.html' %}
+            {% include '_includes/social_links.html' %}
+            {% include '_includes/mailchimp.html' %}
         </div>
         </section>
 </div>
@@ -101,11 +104,11 @@
 
 {% block script %}
     {{ super() }}
-    {% from 'comments.html' import comments_script with context %}
+    {% from '_includes/comments.html' import comments_script with context %}
     {{ comments_script(article) }}
     {% set depends = article.depends.split(', ') if article.depends else [] %}
     {% if 'mathjax' in depends %}
-        {% include 'mathjax.html' %}
+        {% include '_includes/mathjax.html' %}
     {% endif %}
     {% if 'highcharts' in depends %}
         <script src="http://code.highcharts.com/highcharts.js"></script>

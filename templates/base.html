@@ -14,7 +14,7 @@
         <meta name="author" content="{{ AUTHOR }}" />
         <meta name="copyright" content="{{ AUTHOR }}" />
         {% endif %}
-        {% include 'latex.html' %}
+        {% include '_includes/latex.html' %}
 
         {% if SITE_DESCRIPTION %}
         <meta name="description" content="{% block head_description %}{{ SITE_DESCRIPTION }}{% endblock head_description %}" />
@@ -23,18 +23,18 @@
         {% endblock meta_tags_in_head %}
         <title>{% block title %}{{ SITENAME|striptags }}{% endblock title %}</title>
         {% block head_links %}
-        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
         <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/elegant.css" media="screen">
         {%if CUSTOM_CSS %}
         <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/theme/css/custom.css" media="screen">
         {% endif %}
         {% endblock head_links %}
-        {% include 'favicon_links.html' %}
+        {% include '_includes/favicon_links.html' %}
         {% block feed_links %}
-        {% include 'feeds.html' %}
+        {% include '_includes/feeds.html' %}
         {% endblock feed_links %}
-        {% include 'analytics.html' %}
+        {% include '_includes/analytics.html' %}
         <script src="http://code.jquery.com/jquery.min.js"></script>
     </head>
     <body class="tex2jax_ignore">
@@ -77,9 +77,9 @@
         </div>
         <div id="push"></div>
     </div>
-        {% include 'footer.html' %}
+        {% include '_includes/footer.html' %}
         {% block script %}
-        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/js/bootstrap.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
         <script>
             function validateForm(query)
             {
@@ -87,6 +87,6 @@
             }
         </script>
         {% endblock script %}
-        {% include 'stat_counter.html' %}
+        {% include '_includes/stat_counter.html' %}
     </body>
 </html>
