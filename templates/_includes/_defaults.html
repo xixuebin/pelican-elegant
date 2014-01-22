@@ -40,3 +40,31 @@
 {% set RECENT_ARTICLES_COUNT  = RECENT_ARTICLES_COUNT  %}
 {% endif %}
 
+{# Label to show before Share Post links #}
+{% if not SHARE_POST_INTRO %}
+{% set SHARE_POST_INTRO = 'Share on:' %}
+{% else %}
+{% set SHARE_POST_INTRO = SHARE_POST_INTRO %}
+{% endif %}
+
+{# Label to show before comments #}
+{% if not COMMENTS_INTRO %}
+{% set COMMENTS_INTRO = '' %}
+{% else %}
+{% set COMMENTS_INTRO = COMMENTS_INTRO %}
+{% endif %}
+
+{# Author's twitter handle. Used in Twitter card meta data #}
+{% if not TWITTER_USERNAME %}
+{% set TWITTER_USERNAME = '' %}
+{% else %}
+{% set TWITTER_USERNAME = TWITTER_USERNAME %}
+{% endif %}
+
+{# Author's Google Plus Profile URL. Used for Google Authorship #}
+{% if not GOOGLE_PLUS_PROFILE_URL %}
+{% set GOOGLE_PLUS_PROFILE_URL = '' %}
+{% else %}
+{% set GOOGLE_PLUS_PROFILE_URL = GOOGLE_PLUS_PROFILE_URL %}
+{% endif %}
+
