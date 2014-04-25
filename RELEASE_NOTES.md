@@ -16,13 +16,15 @@ Version 2.0 (under development)
 * Add Disqus comments to Pages
 * All customizable variables consolidated in a single `_defaults.html`, making
   it easier for you to customize or even *localize* the theme
+* Rename `SITESUBTITLE` to `SITE_SUBTITLE`
 
 Performance
 -----------
 
 * Performance improvement- 4x faster output
 * Reduce number of HTTP requests using `assets` plugin
-* Favicon is disabled by default. Set `USE_FAVICON` to true to enable it
+* Shortcut icons, like favicon, are disabled by default. Set
+  `USE_SHORTCUT_ICONS` to true to enable it
 
 Visual Style
 ------------
@@ -36,6 +38,7 @@ Visual Style
 * Time stamps in categories and tags pages are justified
 * Line number in code block is hidden on tablets and phones to save space for
   content
+* More sizes of image for Apple Touch icons
 * Fixed: Nested lists have different font sizes
 * Fixed: CSS style rules for literal block in reST is missing
 * Fixed: Long lines in code block will wrap to next line
@@ -50,11 +53,10 @@ Visual Style
 Plugins
 -------
 
-* Support for Latex with the help of `latex` plugin
-* Related Posts support
 * Use `neighbor` plugin to show next and previous articles
 * Use `assets` plugin to minify CSS and JS files
 * Support for `share_post` plugin
+* Support for `related_posts` plugin
 * Support for `multi_part` plugin
 
 Behaviour

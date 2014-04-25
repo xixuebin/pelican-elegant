@@ -35,9 +35,16 @@ in making Elegant more elegant.
 [Brian Blais](http://web.bryant.edu/~bblais/)
 ---------------------------------------------
 
-1. He suggested a solution to the
+1. He suggested via email a solution to the
    [problem](https://github.com/talha131/pelican-elegant/issues/98) of social
-   profiles whose icons are missing via email
+   profiles whose icons are missing
+
+[Brian Levin](https://github.com/bnice5000)
+-------------------------------------------
+
+1. He [reported](https://github.com/talha131/pelican-elegant/issues/115) and
+   [fixed](https://github.com/talha131/pelican-elegant/pull/117) an issue in
+   search code
 
 [calfzhou](https://github.com/calfzhou)
 ---------------------------------------
@@ -56,6 +63,9 @@ in making Elegant more elegant.
 1. He
    [suggested](https://github.com/talha131/pelican-elegant/issues/95#issuecomment-33091647)
    setting title attribute in HTML anchor elements of `multi_part` code
+1. He
+   [suggested](https://github.com/talha131/pelican-elegant/issues/95#issuecomment-41050831)
+   a solution to set title of `multi_part` widget in the sidebar
 1. He [reported](https://github.com/talha131/pelican-elegant/issues/15) a bug
    in social media optimizer code
 1. He [suggested](https://github.com/talha131/pelican-elegant/issues/60) using
@@ -110,7 +120,7 @@ in making Elegant more elegant.
 [Jed Brown](https://github.com/jedbrown)
 ----------------------------------------
 
-1. He suggested integration with Latex via email
+1. He suggested via email integration with Latex
 
 [Jérémie Astori](https://github.com/astorije)
 ---------------------------------------------
@@ -124,7 +134,7 @@ in making Elegant more elegant.
 1. He suggested [an
    improvement](https://twitter.com/BostonEnginerd/status/374555593589002241)
    to the [Elegant project
-   description](http://oncrashreboot.com/elegant-a-clean-theme-for-pelican-with-search-feature)
+   description](http://oncrashreboot.com/pelican-elegant)
 
 [kafran](https://github.com/kafran)
 -----------------------------------
@@ -139,6 +149,11 @@ in making Elegant more elegant.
    bug](https://github.com/talha131/pelican-elegant/issues/1) about
    `RECENT_ARTICLES_COUNT`
 
+[Rod Morehead](https://github.com/rmorehead)
+--------------------------------------------
+
+1. He submitted a [patch](https://github.com/talha131/pelican-elegant/pull/106)
+
 [silverhook](https://github.com/silverhook)
 -------------------------------------------
 
@@ -148,6 +163,14 @@ in making Elegant more elegant.
    adding support for related articles plugin
 1. He [helped](https://github.com/talha131/pelican-elegant/issues/102) in
    fixing justification of timestamps issue
+1. He [reported](https://github.com/talha131/pelican-elegant/issues/116) a bug
+   in social profiles widget
+1. He
+   [suggested](https://github.com/talha131/pelican-elegant/issues/95#issuecomment-38347811)
+   to make label of multi-part plugin customisable
+1. He
+   [suggested](https://github.com/talha131/pelican-elegant/issues/95#issuecomment-41032225)
+   a solution to set title of `multi_part` widget in the sidebar
 
 [tshepang](https://github.com/tshepang)
 ---------------------------------------
@@ -185,9 +208,20 @@ in making Elegant more elegant.
 1. He [reported](https://github.com/talha131/pelican-elegant/issues/107) an
    issue when publishing the site
 
-[yuex](https://github.com/yuex)
+[yuex 悟道洞穴人](https://github.com/yuex)
 -------------------------------
 
 1. He submitted a [patch](https://github.com/talha131/pelican-elegant/pull/2)
    to the project
+
+3rd Party Credits
+=================
+
+Elegant is standing on the shoulders of these giants.
+
+1. [Tipue Search](http://www.tipue.com/search/)
+1. [Bootstrap 2.3.2](http://getbootstrap.com/2.3.2/)
+1. [Solarized Light theme](http://ethanschoonover.com/solarized) converted to
+   [Pelican Pygments](https://github.com/yuex/pelican-pygments-solarized-css)
+   by [yuex 悟道洞穴人](https://github.com/yuex)
 
