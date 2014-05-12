@@ -1,12 +1,12 @@
 {% extends 'base.html' %}
 
 {% block title %}
-{{ page.title }} {%if page.subtitle %} - {{ page.subtitle }} {% endif %} · {{ super() }}
+{{ page.title|striptags|e }} {%if page.subtitle %} - {{ page.subtitle|striptags|e }} {% endif %} · {{ super() }}
 {% endblock title %}
 
 {% block head_description %}
 {% if page.summary %}
-{{ page.summary|striptags }}
+{{ page.summary|striptags|e }}
 {% endif %}
 {% endblock head_description %}
 
