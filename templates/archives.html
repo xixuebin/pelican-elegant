@@ -34,7 +34,7 @@ Full archives of {{ SITENAME|striptags|e }} blog.
 <div class="row-fluid">
     <div class="span10 offset2">
         <div class="blog-archives">
-            {% set last_year = 1 %}
+            {% set last_year = 0 %}
             {% for article in dates %}
             {% set year = article.date.strftime('%Y') %}
             {%if last_year != year %}
