@@ -41,7 +41,7 @@ Full archives of {{ SITENAME|striptags|e }} blog.
             <h2 id="{{year }}"><a href="#{{year}}">{{ year }}</a></h2>
             {% set last_year = year %}
             {% endif %}
-            <!--{% set next_year = 0 %}-->
+            {% set next_year = 0 %}
             {% if not loop.last %}
             {% set next = loop.index0 + 1 %}
             {% set next_article = dates[next] %}
